@@ -185,7 +185,9 @@ export default function Home() {
           30hz or 60hz refresh rate.
         </p>
         <p className="mb-4">
-          Check out the <a href="www.github.com">github</a> to see more.
+          Check out the{" "}
+          <a href="https://github.com/crowdozer/galactus">github</a> to see
+          more.
         </p>
       </div>
     </div>
