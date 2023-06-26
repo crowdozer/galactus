@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex flex-col w-screen h-screen overflow-y-auto overflow-x-hidden">
-          <nav className="py-2">
+          <nav className="py-2 px-4 sm:px-0">
             <div className="mx-auto max-w-3xl flex flex-row gap-2">
               <a href="https://www.crwdzr.io/" className="text-lg font-bold">
                 crwdzr.io
@@ -28,7 +28,7 @@ export default function RootLayout({
               <h2 className="self-center text-stone-400">ascii galaxy</h2>
             </div>
           </nav>
-          <div className="grow">{children}</div>
+          <div className="grow px-4 sm:px-0">{children}</div>
         </div>
       </body>
     </html>

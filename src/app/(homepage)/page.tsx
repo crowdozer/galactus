@@ -67,6 +67,7 @@ export default function Home() {
         }}
       />
 
+      {/* render a message when the output hasn't started yet */}
       {!asciiWidth && !asciiHeight ? (
         <div className="py-48 text-center">Measuring performance...</div>
       ) : null}
@@ -85,6 +86,7 @@ export default function Home() {
         {ascii}
       </pre>
 
+      {/* stats area */}
       <div className="mono rounded p-8">
         <div className="grid grid-cols-2">
           <div className="px-4 py-2 font-bold">sim speed</div>
@@ -111,6 +113,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* config area */}
       <div className="max-w-3xl mx-auto py-8">
         <div className="flex flex-col gap-4">
           <Input
@@ -167,14 +170,22 @@ export default function Home() {
         </div>
       </div>
 
+      {/* faq/misc area */}
       <div className="max-w-3xl mx-auto py-8">
-        <h1 className="text-xl font-bold mb-2">What is it?</h1>
-        <p>
-          A simple demo to render a galaxy using ascii. Star positions are
-          simulated individually, then converted to a grayscale image where each
-          pixel value is a brightness level. The brightness of that pixel is
-          then rounded to the nearest alphabet character and displayed in the
-          corresponding row/column.
+        <h1 className="text-xl font-bold mb-4">What is it?</h1>
+        <p className="mb-4">
+          Star positions are simulated individually, then converted to a
+          grayscale image where each pixel value is a brightness level. The
+          brightness of that pixel is then rounded to the nearest alphabet
+          character and displayed in the corresponding row/column.
+        </p>
+        <p className="mb-4">
+          Over time they will fall towards the center, and the shape of the
+          galaxy will distort a bit. It works better with wider screens and a
+          30hz or 60hz refresh rate.
+        </p>
+        <p className="mb-4">
+          Check out the <a href="www.github.com">github</a> to see more.
         </p>
       </div>
     </div>
