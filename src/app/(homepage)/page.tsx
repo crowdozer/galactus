@@ -186,8 +186,14 @@ export default function Home() {
         </p>
         <p className="mb-4">
           Check out the{" "}
-          <a href="https://github.com/crowdozer/galactus">github</a> to see
-          more.
+          <a
+            href="https://github.com/crowdozer/galactus"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>{" "}
+          to see more.
         </p>
       </div>
     </div>
